@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_700"
+    android:padding="16dp">
+
+    <!-- عنوان التطبيق -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👁️ EyePool Master"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="عيون الذكاء الاصطناعي للبلياردو"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- الزر الرئيسي -->
+    <Button
+        android:id="@+id/btnEyeControl"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="👁️ تشغيل العين"
+        android:textSize="20sp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp" />
+
+    <!-- أزرار التحكم -->
+    <Button
+        android:id="@+id/btnQuickSetup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="⚡ إعداد سريع"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnDetectGame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🔍 اكتشاف اللعبة"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnSmartLines"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="📐 خطوط ذكية"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnAutoShot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🎯 ضرب تلقائي"
+        android:textSize="18sp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp" />
+
+    <!-- معلومات بسيطة -->
+    <TextView
+        android:id="@+id/tvGameStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎮 افتح لعبة بلياردو"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/purple_500"
+        android:layout_marginBottom="10dp" />
+
+    <!-- حالة الخدمة -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏸️ الخدمة متوقفة"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="12dp"
+        android:background="@color/purple_900" />
+
+</LinearLayout>

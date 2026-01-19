@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EyePool Master</string>
+    <string name="start_eye">تشغيل العين</string>
+    <string name="stop_eye">إيقاف العين</string>
+    <string name="quick_setup">الإعداد السريع</string>
+    <string name="detect_game">اكتشاف اللعبة</string>
+</resources>

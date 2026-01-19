@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eyepool.master">
+
+    <!-- صلاحيات Overlay -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    
+    <!-- صلاحية الوصول إلى التخزين (اختياري) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    
+    <!-- لقراءة حالة التطبيقات (اختياري) -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" 
+        tools:ignore="ProtectedPermissions" />
+    
+    <!-- لقراءة الشاشة (اختياري) -->
+    <uses-permission android:name="android.permission.READ_SCREEN_CONTENT"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"           <!-- تم التعديل -->
+        android:label="@string/app_name"               <!-- أفضل استخدام @string -->
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EyePoolMaster"     <!-- تأكد من وجوده في themes.xml -->
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        
+        <!-- النشاط الرئيسي -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- خدمة Overlay -->
+        <service
+            android:name=".EyeOverlayService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="specialUse" />   <!-- حذف permission -->
+        
+        <!-- نشاط الإعدادات (إذا كان موجوداً) -->
+        <!-- <activity android:name=".SettingsActivity" android:exported="false" /> -->
+    </application>
+</manifest>
